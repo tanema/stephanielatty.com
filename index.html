@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8">
+      <div class="box title">
+        {% markdown title.md %}
+      </div>
+      <div class="box history">
+        {% markdown academic_history.md %}
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 flex-vertical">
+      <div class="box profile flex-expand">
+        <img src="{{ "/assets/images/profile.png" | prepend: site.baseurl }}" />
+      </div>
+      <div class="box social">
+        {% markdown social.md %}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-8">
+      <div class="box projects">
+        {% markdown projects.md %}
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 flex-vertical">
+      <div class="box papers flex-expand">
+        {% markdown papers.md %}
+      </div>
+    </div>
+  <div>
+</div>

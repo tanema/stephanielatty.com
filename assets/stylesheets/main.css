@@ -1,0 +1,151 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E9E7E8;
+  color: #3A3A3A;
+  line-height: 1.6;
+}
+
+/*yellow: #F8E71C (edited)*/
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+@media (min-width: 48em) {
+  p {
+    font-size: 16px;
+  }
+}
+
+p + p {
+  margin-top: 20px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 30px auto 0;
+  max-width: 1140px;
+}
+
+@media (min-width: 48em) {
+  .container {
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.box {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 48em) {
+  .box {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.title h3,
+h2 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.title h3:before,
+h2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+  background: #F8E71C;
+}
+
+.title h3{
+  font-style: italic;
+}
+
+.profile {
+  padding: 0;
+  position: relative;
+}
+
+
+@media (min-width: 48em) {
+  .profile img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }  
+}
+
+
+.history {
+}
+
+.history img {
+  max-width: 64px;
+  float: left;
+}
+
+.social {
+}
+
+.papers {
+}
+
+.projects p + h3{
+  margin-top: 20px;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-expand {
+  flex: 1 0 0%;
+}
